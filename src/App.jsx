@@ -1,34 +1,56 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import slime from './assets/slime.svg'
 import './App.css'
 
+
+/*
+
+  COMPONENTS
+
+*/
+function HeaderCom(){
+  return (
+    <header>
+      <img src={slime} alt="slime icon" />
+      <span>DQMJ INDEX</span>
+    </header>
+  )
+}
+
+function SearchBar(){
+  return(
+    <form id='searchBox'>
+      <input type="search" id='searchBar' placeholder='Look up a monster by Name or ID'/>
+      <button autoFocus type='button' onClick={handleSearch}></button>
+    </form>
+  )
+}
+
+/*
+
+  extra functionalities
+
+*/
+
+function handleSearch(){
+
+  let searchBar = document.getElementById("searchBar")
+  searchBar.value = ""
+
+  return false
+}
+
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <main>
+      <HeaderCom/>
+
+      <SearchBar/>
+
+      <section></section>
+    </main>
   )
 }
 

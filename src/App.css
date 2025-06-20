@@ -1,42 +1,114 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+:root{
+  --milk: #e1e4c1;
+  --slimeBlue: #1c75bc;
+
+  --headerHeight: 48px;
+
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+body{
+  display: block;
+  background-color: var(--milk);
+  margin: 0;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header{
+  height: var(--headerHeight);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  & img{
+    height: calc(var(--headerHeight) - 8px);
   }
-  to {
-    transform: rotate(360deg);
+
+  & span{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: var(--slimeBlue);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+#searchBox{
+  height: var(--headerHeight);
+  width: 90vw;
+  max-width: 512px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  background-clip: border-box;
+  border: 0px solid transparent;
+  border-radius: 2rem;
+  transition: border .1s ease-in-out;
+  padding: 0;
+
+  &:focus-within{
+    border: 2px solid var(--slimeBlue);
+    border-radius: 2rem;
+  }
+
+  & input{
+    height: inherit;
+    padding-left: 24px;
+    background-color: transparent;
+    width: 100%;
+    border: 0 solid transparent;
+    outline: none;
+    z-index: 1;
+  }
+
+  & button{
+    background-image: url(./assets/search.svg);
+    background-size: calc(var(--headerHeight) - 8px);
+    background-repeat:no-repeat;
+    background-position:center;
+    margin: 0;
+    height: inherit;
+    /* align-self: flex-end; */
+    height: var(--headerHeight);
+    aspect-ratio: 1/1;
+    padding: 0;
+    border-radius: 0 50% 50% 0;
+    border: 0 solid transparent;
+    background-color: white;
+    transition: filter;
+    transition-duration: .1s;
+
+    &:hover{
+      filter: invert();
+    }
   }
 }
 
-.card {
-  padding: 2em;
+#searchBox::before{
+  position: fixed;
+  content: "";
+  background-color: white;
+  border: 0 solid transparent;
+  height: var(--headerHeight);
+  aspect-ratio: 1/1;
+  border-radius: 50% 0 0 50%;
 }
 
-.read-the-docs {
-  color: #888;
+
+
+@media only screen and (min-width: 480px){
+  *{
+    font-size: 1rem
+  };
 }
