@@ -1,5 +1,6 @@
 *{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: var(--Germania);
+  letter-spacing: 1px;
 }
 
 :root{
@@ -8,6 +9,7 @@
 
   --headerHeight: 48px;
 
+  --Germania: "Germania One", system-ui;
 
 }
 
@@ -22,6 +24,7 @@ main{
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 
 header{
@@ -106,9 +109,101 @@ header{
   border-radius: 50% 0 0 50%;
 }
 
+#monsterCollection{
+  display: block;
+  width: 90%;
+  height: 512px;
+  overflow-y: hidden;
+}
 
-#monsterDetailContainer{
-  height: 768px;
+#topBar{
+  position: fixed;
+  top: 0;
+}
+
+#arrowContainer{
+  position: fixed;
+  bottom: 24px;
+  width: calc(128px + 24px);
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+
+  & .ArrowCircle{
+    background-color: white;
+    height: 64px;
+    aspect-ratio: 1/1;
+    border: 0 solid transparent;
+    border-radius: 50%;
+    transition: background-color .05s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+      background-color: var(--slimeBlue);
+
+      & #leftArrow{
+        border-right: 24px solid white;
+      }
+      & #rightArrow{
+        border-left: 24px solid white;
+      }
+    }
+
+    & #leftArrow, #rightArrow{
+      height: 0px;
+      width: 0px;
+      border-radius: .25rem;
+    }
+
+    & #leftArrow{
+      border-top: 12px solid transparent;
+      border-right: 24px solid black;
+      border-bottom: 12px solid transparent;
+    }
+    & #rightArrow{
+      border-top: 12px solid transparent;
+      border-left: 24px solid black;
+      border-bottom: 12px solid transparent;
+    }
+
+  }
+}
+
+
+
+.monsterDetailContainer{
+  height: 512px;
+}
+
+.detailGrid{
+  background-color: var(--slimeBlue);
+
+  min-height: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  border: 0 solid transparent;
+  border-radius: 2rem;
+  padding: 32px;
+
+
+  & div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & span{
+
+      & strong{
+        color: white;
+      }
+    }
+  }
+
 }
 
 /* 
@@ -121,13 +216,52 @@ header{
   width: 100vw;
   max-width: 256px;
   aspect-ratio: 1/1;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
+.centerFlex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-
+.centerBlock{
+  display: block;
+  margin-left: auto;
+  width: 90%;
+  overflow-y: hidden;
+  margin-right: auto;
+}
 
 @media only screen and (min-width: 480px){
   *{
     font-size: 1rem
   };
 }
+@media only screen and (min-width: 960px){
+  #monsterCollection{
+    width: 100%;
+  }
+
+  .monsterDetailContainer{
+    display: flex;
+    flex-direction: row;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .monsterSprite{
+    margin: 0;
+    max-width: 512px;
+    position: relative;
+  }
+
+  .detailGrid{
+    width: 512px;
+  }
+}
+

@@ -8,7 +8,7 @@
             "rank": "F",
             "skillset": "Slimer",
             "trait1": "Critical Massacre",
-            "trait2": "none",
+            "trait2": "",
             "resistances": ""
         },
         {
@@ -18,8 +18,8 @@
             "family": "Dragon",
             "rank": "F",
             "skillset": "Defender",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Dazzleproof"
         },
         {
@@ -29,8 +29,8 @@
             "family": "Nature",
             "rank": "F",
             "skillset": "Saboteur",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Sleepproof Vulnerable to Frizz"
         },
         {
@@ -40,8 +40,8 @@
             "family": "Beast",
             "rank": "F",
             "skillset": "Naturalist",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Fizzleproof"
         },
         {
@@ -51,8 +51,8 @@
             "family": "Material",
             "rank": "F",
             "skillset": "Fear-monger",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": ""
         },
         {
@@ -63,7 +63,7 @@
             "rank": "F",
             "skillset": "Dark Knight",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof"
         },
         {
@@ -74,7 +74,7 @@
             "rank": "F",
             "skillset": "Graveheart",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Whackproof"
         },
         {
@@ -85,7 +85,7 @@
             "rank": "F",
             "skillset": "Slimer",
             "trait1": "Poisoner",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Poisonproof"
         },
         {
@@ -95,8 +95,8 @@
             "family": "Dragon",
             "rank": "F",
             "skillset": "Icemeister",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Paralysisproof"
         },
         {
@@ -107,7 +107,7 @@
             "rank": "F",
             "skillset": "Huntsman",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Drain Magicproof Healed by Water"
         },
         {
@@ -118,7 +118,7 @@
             "rank": "F",
             "skillset": "Guerrilla",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Dazzleproof"
         },
         {
@@ -129,7 +129,7 @@
             "rank": "F",
             "skillset": "Reaper",
             "trait1": "Zammeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Healed by Zam Vulnerable to Zap Whackproof"
         },
         {
@@ -139,8 +139,8 @@
             "family": "Demon",
             "rank": "F",
             "skillset": "Hypnotist",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Drain Magicproof"
         },
         {
@@ -151,7 +151,7 @@
             "rank": "F",
             "skillset": "Fire",
             "trait1": "Frizzmeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Healed by Fire Breath Healed by Frizz Vulnerable to Water"
         },
         {
@@ -161,8 +161,8 @@
             "family": "Slime",
             "rank": "F",
             "skillset": "Bolsterer",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": ""
         },
         {
@@ -173,7 +173,7 @@
             "rank": "F",
             "skillset": "Toxifier",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof Vulnerable to Frizz"
         },
         {
@@ -194,8 +194,8 @@
             "family": "Nature",
             "rank": "F",
             "skillset": "Defender",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Vulnerable to Frizz"
         },
         {
@@ -205,8 +205,8 @@
             "family": "Beast",
             "rank": "F",
             "skillset": "Dancer",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Sleepproof"
         },
         {
@@ -217,7 +217,7 @@
             "rank": "F",
             "skillset": "Fire Fighter",
             "trait1": "Frizzmeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Healed by Fire Breath Healed by Frizz Vulnerable to Crack"
         },
         {
@@ -228,7 +228,7 @@
             "rank": "F",
             "skillset": "Seal",
             "trait1": "Desperado",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Dazzleproof Whackproof"
         },
         {
@@ -238,8 +238,8 @@
             "family": "Undead",
             "rank": "F",
             "skillset": "Green Finger",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Fizzleproof Vulnerable to Frizz"
         },
         {
@@ -250,7 +250,7 @@
             "rank": "F",
             "skillset": "Healer",
             "trait1": "Health Professional",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof"
         },
         {
@@ -261,7 +261,7 @@
             "rank": "F",
             "skillset": "Toxifier",
             "trait1": "Escape Artist",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Paralysisproof Poisonproof"
         },
         {
@@ -272,7 +272,7 @@
             "rank": "F",
             "skillset": "Cleanser",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Confusionproof"
         },
         {
@@ -283,7 +283,7 @@
             "rank": "F",
             "skillset": "Icemeister",
             "trait1": "Crackmeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Healed by Crack Healed by Ice Breath Vulnerable to Frizz"
         },
         {
@@ -294,7 +294,7 @@
             "rank": "F",
             "skillset": "Huntsman",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Dazzleproof"
         },
         {
@@ -305,7 +305,7 @@
             "rank": "F",
             "skillset": "Frizz & Bang",
             "trait1": "Bangmeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Healed by Bang Vulnerable to Crack"
         },
         {
@@ -316,7 +316,7 @@
             "rank": "F",
             "skillset": "Aquapothecary",
             "trait1": "Health Professional",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof Healed by Water"
         },
         {
@@ -326,8 +326,8 @@
             "family": "Undead",
             "rank": "F",
             "skillset": "Graveheart",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Poisonproof Vulnerable to Frizz"
         },
         {
@@ -338,7 +338,7 @@
             "rank": "E",
             "skillset": "Frizz & Zap",
             "trait1": "Frizzmeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Frizzproof"
         },
         {
@@ -349,7 +349,7 @@
             "rank": "E",
             "skillset": "Martyr",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": ""
         },
         {
@@ -360,7 +360,7 @@
             "rank": "E",
             "skillset": "Naturalist",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Drain Magicproof"
         },
         {
@@ -371,7 +371,7 @@
             "rank": "E",
             "skillset": "Guerrilla",
             "trait1": "Early Bird",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Confusionproof"
         },
         {
@@ -381,8 +381,8 @@
             "family": "Material",
             "rank": "E",
             "skillset": "Enfeebler",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Fizzleproof"
         },
         {
@@ -393,7 +393,7 @@
             "rank": "E",
             "skillset": "Frizz & Bang",
             "trait1": "Bangmeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof"
         },
         {
@@ -403,8 +403,8 @@
             "family": "Undead",
             "rank": "E",
             "skillset": "Materialist",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Dazzleproof Vulnerable to Frizz"
         },
         {
@@ -415,7 +415,7 @@
             "rank": "E",
             "skillset": "Slimer",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fire Breathproof Ice Breathproof"
         },
         {
@@ -426,7 +426,7 @@
             "rank": "E",
             "skillset": "Frizz & Woosh",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Confusionproof Vulnerable to Frizz"
         },
         {
@@ -436,8 +436,8 @@
             "family": "Nature",
             "rank": "E",
             "skillset": "Aquapothecary",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Fizzleproof Healed by Water"
         },
         {
@@ -447,8 +447,8 @@
             "family": "Beast",
             "rank": "E",
             "skillset": "Mime",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Dazzleproof"
         },
         {
@@ -458,8 +458,8 @@
             "family": "Material",
             "rank": "E",
             "skillset": "All-Rounder",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Healed by Water Sleepproof"
         },
         {
@@ -469,8 +469,8 @@
             "family": "Demon",
             "rank": "E",
             "skillset": "Bang & Woosh",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Attack Magicproof"
         },
         {
@@ -481,7 +481,7 @@
             "rank": "E",
             "skillset": "Diminisher",
             "trait1": "Counterstriker",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof Vulnerable to Zap"
         },
         {
@@ -491,8 +491,8 @@
             "family": "Undead",
             "rank": "E",
             "skillset": "Graveheart",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Crackproof Vulnerable to Zap Whackproof"
         },
         {
@@ -502,8 +502,8 @@
             "family": "Slime",
             "rank": "E",
             "skillset": "Mage Aid",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Dazzleproof"
         },
         {
@@ -513,8 +513,8 @@
             "family": "Dragon",
             "rank": "E",
             "skillset": "Toughie",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Drain Magicproof"
         },
         {
@@ -525,7 +525,7 @@
             "rank": "E",
             "skillset": "Woosh & Crack",
             "trait1": "Crackmeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Crackproof"
         },
         {
@@ -535,8 +535,8 @@
             "family": "Beast",
             "rank": "E",
             "skillset": "Speedster",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Sleepproof"
         },
         {
@@ -546,8 +546,8 @@
             "family": "Material",
             "rank": "E",
             "skillset": "Fire Fighter",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Sagproof"
         },
         {
@@ -557,8 +557,8 @@
             "family": "Demon",
             "rank": "E",
             "skillset": "Healer",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Vulnerable to Frizz"
         },
         {
@@ -568,8 +568,8 @@
             "family": "Undead",
             "rank": "E",
             "skillset": "Saboteur",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Inactionproof"
         },
         {
@@ -580,7 +580,7 @@
             "rank": "D",
             "skillset": "Champion",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Sagproof"
         },
         {
@@ -590,8 +590,8 @@
             "family": "Dragon",
             "rank": "D",
             "skillset": "Dragon Lore",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Fire Breathproof Ice Breathproof"
         },
         {
@@ -602,7 +602,7 @@
             "rank": "D",
             "skillset": "Naturalist",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Decelerateproof"
         },
         {
@@ -613,7 +613,7 @@
             "rank": "D",
             "skillset": "Fear-monger",
             "trait1": "Desperado",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Whackproof"
         },
         {
@@ -623,8 +623,8 @@
             "family": "Beast",
             "rank": "D",
             "skillset": "Nightmare",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Sleepproof"
         },
         {
@@ -634,8 +634,8 @@
             "family": "Dragon",
             "rank": "D",
             "skillset": "Crack & Zam",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Vulnerable to Zap Whackproof"
         },
         {
@@ -646,7 +646,7 @@
             "rank": "D",
             "skillset": "Speedster",
             "trait1": "Able Ambusher",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Dazzleproof"
         },
         {
@@ -656,8 +656,8 @@
             "family": "Material",
             "rank": "D",
             "skillset": "Martyr",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Whackproof"
         },
         {
@@ -667,8 +667,8 @@
             "family": "Demon",
             "rank": "D",
             "skillset": "Bolsterer",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Dazzleproof"
         },
         {
@@ -678,8 +678,8 @@
             "family": "Demon",
             "rank": "D",
             "skillset": "Dancer",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Drain Magicproof"
         },
         {
@@ -690,7 +690,7 @@
             "rank": "D",
             "skillset": "Wind Blower",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Vulnerable to Zap Whackproof Wooshproof"
         },
         {
@@ -700,8 +700,8 @@
             "family": "Material",
             "rank": "D",
             "skillset": "Materialist",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Inactionproof"
         },
         {
@@ -712,7 +712,7 @@
             "rank": "D",
             "skillset": "White Knight",
             "trait1": "Counterstriker",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Confusionproof"
         },
         {
@@ -722,8 +722,8 @@
             "family": "Dragon",
             "rank": "D",
             "skillset": "Fire",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Fizzleproof"
         },
         {
@@ -756,7 +756,7 @@
             "rank": "D",
             "skillset": "Bad Breath",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Sleepproof"
         },
         {
@@ -767,7 +767,7 @@
             "rank": "D",
             "skillset": "Iceplosion Slashes",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Vulnerable to Sleep Whackproof"
         },
         {
@@ -778,7 +778,7 @@
             "rank": "D",
             "skillset": "Berserker",
             "trait1": "Metal Beater",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Whackproof"
         },
         {
@@ -789,7 +789,7 @@
             "rank": "D",
             "skillset": "Seal",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Sleepproof Vulnerable to Frizz"
         },
         {
@@ -800,7 +800,7 @@
             "rank": "D",
             "skillset": "Darklight Slashes",
             "trait1": "Counterstriker",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Paralysisproof"
         },
         {
@@ -811,7 +811,7 @@
             "rank": "D",
             "skillset": "Dragon Lore",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof"
         },
         {
@@ -833,7 +833,7 @@
             "rank": "D",
             "skillset": "Boom Boxer",
             "trait1": "Critical Massacre",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof"
         },
         {
@@ -844,7 +844,7 @@
             "rank": "D",
             "skillset": "Bounty Hunter",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Drain Magicproof"
         },
         {
@@ -855,7 +855,7 @@
             "rank": "D",
             "skillset": "Bird Brain",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Inactionproof Whackproof"
         },
         {
@@ -865,8 +865,8 @@
             "family": "Demon",
             "rank": "D",
             "skillset": "Diabolist",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Bangproof"
         },
         {
@@ -876,8 +876,8 @@
             "family": "Undead",
             "rank": "D",
             "skillset": "Enfeebler",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Inactionproof Vulnerable to Zap Whackproof"
         },
         {
@@ -910,7 +910,7 @@
             "rank": "D",
             "skillset": "Seal",
             "trait1": "Magic Regenerator",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fire Breathproof Fizzleproof"
         },
         {
@@ -932,7 +932,7 @@
             "rank": "D",
             "skillset": "Toughie",
             "trait1": "Counterstriker",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Sagproof Vulnerable to Sleep"
         },
         {
@@ -942,8 +942,8 @@
             "family": "Beast",
             "rank": "C",
             "skillset": "Fortifier",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Fizzleproof"
         },
         {
@@ -953,8 +953,8 @@
             "family": "Material",
             "rank": "C",
             "skillset": "Dancer",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Dazzleproof Vulnerable to Frizz"
         },
         {
@@ -964,8 +964,8 @@
             "family": "Demon",
             "rank": "C",
             "skillset": "Antimagic",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Fizzleproof"
         },
         {
@@ -975,8 +975,8 @@
             "family": "Undead",
             "rank": "C",
             "skillset": "Bad Breath",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Poisonproof Vulnerable to Zap Whackproof"
         },
         {
@@ -987,7 +987,7 @@
             "rank": "C",
             "skillset": "Dragon Lore",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fire Breathproof Ice Breathproof"
         },
         {
@@ -998,7 +998,7 @@
             "rank": "C",
             "skillset": "Dragon Lore",
             "trait1": "Critical Massacre",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Confusionproof"
         },
         {
@@ -1009,7 +1009,7 @@
             "rank": "C",
             "skillset": "Cure-all",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Ice Breathproof"
         },
         {
@@ -1020,7 +1020,7 @@
             "rank": "C",
             "skillset": "Bird Brain",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Inactionproof"
         },
         {
@@ -1030,8 +1030,8 @@
             "family": "Beast",
             "rank": "C",
             "skillset": "Aquapothecary",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Dazzleproof Healed by Water"
         },
         {
@@ -1042,7 +1042,7 @@
             "rank": "C",
             "skillset": "Bang & Crack",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Bangproof Healed by Zam"
         },
         {
@@ -1063,8 +1063,8 @@
             "family": "Material",
             "rank": "C",
             "skillset": "Materialist",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Confusionproof"
         },
         {
@@ -1074,8 +1074,8 @@
             "family": "Demon",
             "rank": "C",
             "skillset": "Thunderwind Slashes",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Healed by Water Sagproof"
         },
         {
@@ -1086,7 +1086,7 @@
             "rank": "C",
             "skillset": "Cleric",
             "trait1": "Critical Massacre",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Whackproof"
         },
         {
@@ -1097,7 +1097,7 @@
             "rank": "C",
             "skillset": "Anti-dragon",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Whackproof"
         },
         {
@@ -1108,7 +1108,7 @@
             "rank": "C",
             "skillset": "Ice",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Bangproof"
         },
         {
@@ -1119,7 +1119,7 @@
             "rank": "C",
             "skillset": "Crack & Zam",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Sagproof Vulnerable to Zap"
         },
         {
@@ -1130,7 +1130,7 @@
             "rank": "C",
             "skillset": "Wind Blower",
             "trait1": "Wooshmeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Confusionproof"
         },
         {
@@ -1141,7 +1141,7 @@
             "rank": "C",
             "skillset": "Healer",
             "trait1": "Health Professional",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof Whackproof"
         },
         {
@@ -1152,7 +1152,7 @@
             "rank": "C",
             "skillset": "Anti-metal",
             "trait1": "Metal Beater",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Paralysisproof Poisonproof Whackproof"
         },
         {
@@ -1162,8 +1162,8 @@
             "family": "Dragon",
             "rank": "C",
             "skillset": "Guerrilla",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Sagproof"
         },
         {
@@ -1185,7 +1185,7 @@
             "rank": "C",
             "skillset": "Green Finger",
             "trait1": "Steady Recovery",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Vulnerable to Frizz"
         },
         {
@@ -1195,8 +1195,8 @@
             "family": "Beast",
             "rank": "C",
             "skillset": "Berserker",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Confusionproof"
         },
         {
@@ -1206,8 +1206,8 @@
             "family": "Material",
             "rank": "C",
             "skillset": "All-Rounder",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Sleepproof"
         },
         {
@@ -1218,7 +1218,7 @@
             "rank": "C",
             "skillset": "Hive Mind",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Sleepproof Vulnerable to Frizz"
         },
         {
@@ -1228,8 +1228,8 @@
             "family": "Dragon",
             "rank": "C",
             "skillset": "Assassin",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Whackproof"
         },
         {
@@ -1240,7 +1240,7 @@
             "rank": "C",
             "skillset": "Bang & Woosh",
             "trait1": "Wooshmeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof"
         },
         {
@@ -1250,8 +1250,8 @@
             "family": "Dragon",
             "rank": "B",
             "skillset": "Breath",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Fire Breathproof"
         },
         {
@@ -1262,7 +1262,7 @@
             "rank": "B",
             "skillset": "Woosh & Zam",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Dazzleproof Vulnerable to Zap Whackproof"
         },
         {
@@ -1272,8 +1272,8 @@
             "family": "Undead",
             "rank": "B",
             "skillset": "Healer",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Inactionproof Vulnerable to Zap Whackproof"
         },
         {
@@ -1295,7 +1295,7 @@
             "rank": "B",
             "skillset": "Crack & Zap",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Sleepproof"
         },
         {
@@ -1306,7 +1306,7 @@
             "rank": "B",
             "skillset": "Hive Mind",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Sleepproof Vulnerable to Frizz"
         },
         {
@@ -1317,7 +1317,7 @@
             "rank": "B",
             "skillset": "Assassin",
             "trait1": "Counterstriker",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Sleepproof Vulnerable to Zap"
         },
         {
@@ -1328,7 +1328,7 @@
             "rank": "B",
             "skillset": "Bird Brain",
             "trait1": "Fly Swatter",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Sleepproof"
         },
         {
@@ -1338,8 +1338,8 @@
             "family": "Material",
             "rank": "B",
             "skillset": "Defender",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Sleepproof"
         },
         {
@@ -1350,7 +1350,7 @@
             "rank": "B",
             "skillset": "Cold Sleep",
             "trait1": "Able Ambusher",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Confusionproof"
         },
         {
@@ -1360,8 +1360,8 @@
             "family": "Undead",
             "rank": "B",
             "skillset": "Graveheart",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Poisonproof Vulnerable to Zap Whackproof"
         },
         {
@@ -1383,7 +1383,7 @@
             "rank": "B",
             "skillset": "Woosh & Zam",
             "trait1": "Zammeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof"
         },
         {
@@ -1415,8 +1415,8 @@
             "family": "Beast",
             "rank": "B",
             "skillset": "Diabolist",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Whackproof"
         },
         {
@@ -1426,8 +1426,8 @@
             "family": "Dragon",
             "rank": "B",
             "skillset": "Cold Sleep",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Dazzleproof Fire Breathproof Whackproof"
         },
         {
@@ -1438,7 +1438,7 @@
             "rank": "B",
             "skillset": "Nightmare",
             "trait1": "Critical Massacre",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Whackproof"
         },
         {
@@ -1449,7 +1449,7 @@
             "rank": "B",
             "skillset": "Frizz & Bang II",
             "trait1": "Bangmeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Bangproof Whackproof"
         },
         {
@@ -1460,7 +1460,7 @@
             "rank": "B",
             "skillset": "Bird Brain",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Whackproof"
         },
         {
@@ -1471,7 +1471,7 @@
             "rank": "B",
             "skillset": "Cure-all",
             "trait1": "Health Professional",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof Whackproof"
         },
         {
@@ -1481,8 +1481,8 @@
             "family": "Dragon",
             "rank": "B",
             "skillset": "Boom Boxer",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Bangproof Whackproof"
         },
         {
@@ -1493,7 +1493,7 @@
             "rank": "B",
             "skillset": "Huntsman",
             "trait1": "Critical Massacre",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Dazzleproof"
         },
         {
@@ -1504,7 +1504,7 @@
             "rank": "B",
             "skillset": "Anti-dragon",
             "trait1": "Critical Massacre",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Dazzleproof Sleepproof Whackproof"
         },
         {
@@ -1515,7 +1515,7 @@
             "rank": "A",
             "skillset": "Anti-metal",
             "trait1": "Last Word",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Whackproof"
         },
         {
@@ -1526,7 +1526,7 @@
             "rank": "A",
             "skillset": "Materialist",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Vulnerable to Sleep Whackproof"
         },
         {
@@ -1537,7 +1537,7 @@
             "rank": "A",
             "skillset": "Frizz & Woosh",
             "trait1": "Double Trouble",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof Vulnerable to Inaction Whackproof"
         },
         {
@@ -1548,7 +1548,7 @@
             "rank": "A",
             "skillset": "All-Rounder",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof Vulnerable to Frizz"
         },
         {
@@ -1559,7 +1559,7 @@
             "rank": "A",
             "skillset": "Naturalist",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fire Breathproof Ice Breathproof"
         },
         {
@@ -1570,7 +1570,7 @@
             "rank": "A",
             "skillset": "Woosh & Crack",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Whackproof"
         },
         {
@@ -1581,7 +1581,7 @@
             "rank": "A",
             "skillset": "Bad Breath",
             "trait1": "Poisoner",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Paralysisproof Poisonproof"
         },
         {
@@ -1592,7 +1592,7 @@
             "rank": "A",
             "skillset": "White Knight",
             "trait1": "Critical Massacre",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Sleepproof Whackproof"
         },
         {
@@ -1603,7 +1603,7 @@
             "rank": "A",
             "skillset": "Ice",
             "trait1": "Frizzmeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fire Breathproof Ice Breathproof Whackproof"
         },
         {
@@ -1614,7 +1614,7 @@
             "rank": "A",
             "skillset": "Mage Aid",
             "trait1": "Paralyser",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Confusionproof Healed by Water"
         },
         {
@@ -1625,7 +1625,7 @@
             "rank": "A",
             "skillset": "Berserker",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Confusionproof Whackproof"
         },
         {
@@ -1636,7 +1636,7 @@
             "rank": "A",
             "skillset": "Crack & Zap",
             "trait1": "Crackmeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof Healed by Water"
         },
         {
@@ -1647,7 +1647,7 @@
             "rank": "A",
             "skillset": "Barricade",
             "trait1": "Critical Massacre",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Sleepproof Whackproof"
         },
         {
@@ -1669,7 +1669,7 @@
             "rank": "A",
             "skillset": "Firewind Slashes",
             "trait1": "Early Bird",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Confusionproof"
         },
         {
@@ -1680,7 +1680,7 @@
             "rank": "A",
             "skillset": "Crack & Zam II",
             "trait1": "Double Trouble",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Vulnerable to Sag Whackproof"
         },
         {
@@ -1691,7 +1691,7 @@
             "rank": "A",
             "skillset": "Cursader",
             "trait1": "Poisoner",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Sleepproof Vulnerable to Zap Whackproof"
         },
         {
@@ -1701,8 +1701,8 @@
             "family": "Material",
             "rank": "A",
             "skillset": "Fortifier",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Confusionproof"
         },
         {
@@ -1712,8 +1712,8 @@
             "family": "Material",
             "rank": "A",
             "skillset": "Mage Aid",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": ""
         },
         {
@@ -1724,7 +1724,7 @@
             "rank": "A",
             "skillset": "Diminisher",
             "trait1": "Double Trouble",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof Vulnerable to Paralysis Whackproof"
         },
         {
@@ -1735,7 +1735,7 @@
             "rank": "A",
             "skillset": "Frizz & Zap",
             "trait1": "Artful Dodger",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof"
         },
         {
@@ -1745,8 +1745,8 @@
             "family": "Material",
             "rank": "A",
             "skillset": "Healer",
-            "trait1": "none",
-            "trait2": "none",
+            "trait1": "",
+            "trait2": "",
             "resistances": "Fizzleproof"
         },
         {
@@ -1768,7 +1768,7 @@
             "rank": "A",
             "skillset": "Diabolist",
             "trait1": "Counterstriker",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Inactionproof Vulnerable to Zap Whackproof"
         },
         {
@@ -1779,7 +1779,7 @@
             "rank": "A",
             "skillset": "Barricade",
             "trait1": "Critical Massacre",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Paralysisproof Whackproof"
         },
         {
@@ -1790,7 +1790,7 @@
             "rank": "A",
             "skillset": "Bombardier",
             "trait1": "Wooshmeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Bangproof Whackproof"
         },
         {
@@ -1812,7 +1812,7 @@
             "rank": "S",
             "skillset": "Antimagic",
             "trait1": "Zammeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Whackproof Zamproof"
         },
         {
@@ -1823,7 +1823,7 @@
             "rank": "S",
             "skillset": "Bounty Hunter",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Dazzleproof Vulnerable to Frizz"
         },
         {
@@ -1834,7 +1834,7 @@
             "rank": "S",
             "skillset": "Diabolist",
             "trait1": "Critical Massacre",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Whackproof"
         },
         {
@@ -1845,7 +1845,7 @@
             "rank": "S",
             "skillset": "Fear-monger",
             "trait1": "Critical Massacre",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Paralysisproof Whackproof"
         },
         {
@@ -1856,7 +1856,7 @@
             "rank": "S",
             "skillset": "Bounty Hunter",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Inactionproof Whackproof"
         },
         {
@@ -1867,7 +1867,7 @@
             "rank": "S",
             "skillset": "Champion",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Paralysisproof Whackproof"
         },
         {
@@ -1878,7 +1878,7 @@
             "rank": "S",
             "skillset": "Toughie",
             "trait1": "Critical Massacre",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Whackproof Zapproof"
         },
         {
@@ -1889,7 +1889,7 @@
             "rank": "S",
             "skillset": "Cleanser",
             "trait1": "Steady Recovery",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof Healed by Water"
         },
         {
@@ -1900,7 +1900,7 @@
             "rank": "S",
             "skillset": "Mime",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Inactionproof"
         },
         {
@@ -1911,7 +1911,7 @@
             "rank": "S",
             "skillset": "Assassin",
             "trait1": "Double Trouble",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Dazzleproof Vulnerable to Bang Whackproof"
         },
         {
@@ -1922,7 +1922,7 @@
             "rank": "S",
             "skillset": "Martyr",
             "trait1": "Critical Massacre",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Whackproof"
         },
         {
@@ -1933,7 +1933,7 @@
             "rank": "S",
             "skillset": "Reaper",
             "trait1": "Poisoner",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Sleepproof Vulnerable to Zap Whackproof"
         },
         {
@@ -1955,7 +1955,7 @@
             "rank": "S",
             "skillset": "Cleric",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Healed by Zap Ice Breathproof Whackproof"
         },
         {
@@ -1966,7 +1966,7 @@
             "rank": "S",
             "skillset": "Breath II",
             "trait1": "Paralyser",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof Healed by Water Whackproof"
         },
         {
@@ -1977,7 +1977,7 @@
             "rank": "S",
             "skillset": "Nimzo (skill)",
             "trait1": "Double Trouble",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Healed by Zam Vulnerable to Sap Whackproof"
         },
         {
@@ -1988,7 +1988,7 @@
             "rank": "S",
             "skillset": "Barricade",
             "trait1": "Bangmeister",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Sleepproof Whackproof"
         },
         {
@@ -2010,7 +2010,7 @@
             "rank": "S",
             "skillset": "Captain Crow (skill)",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Confusionproof Paralysisproof Whackproof"
         },
         {
@@ -2032,7 +2032,7 @@
             "rank": "S",
             "skillset": "Dhoulmagus (skill)",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Whackproof Wooshproof"
         },
         {
@@ -2043,7 +2043,7 @@
             "rank": "X",
             "skillset": "Dragonlord (skill)",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fire Breathproof Ice Breathproof Whackproof"
         },
         {
@@ -2065,7 +2065,7 @@
             "rank": "X",
             "skillset": "Ice II",
             "trait1": "Double Trouble",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof Vulnerable to Zap Whackproof"
         },
         {
@@ -2109,7 +2109,7 @@
             "rank": "X",
             "skillset": "Estark (skill)",
             "trait1": "Double Trouble",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof Vulnerable to Sleep Whackproof"
         },
         {
@@ -2131,7 +2131,7 @@
             "rank": "X",
             "skillset": "Muspell",
             "trait1": "Double Trouble",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Paralysisproof Vulnerable to Confusion Whackproof"
         },
         {
@@ -2208,7 +2208,7 @@
             "rank": "Incarni",
             "skillset": "Wulfspade (skill)",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Healed by Lightning Sagproof Vulnerable to Earth"
         },
         {
@@ -2219,7 +2219,7 @@
             "rank": "Incarni",
             "skillset": "Hawkhart (skill)",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Fizzleproof Healed by Fire Vulnerable to Water"
         },
         {
@@ -2230,7 +2230,7 @@
             "rank": "Incarni",
             "skillset": "Cluboon (skill)",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Healed by Earth Sagproof Vulnerable to Fire"
         },
         {
@@ -2241,7 +2241,7 @@
             "rank": "Incarni",
             "skillset": "Diamagon (skill)",
             "trait1": "Psycho",
-            "trait2": "none",
+            "trait2": "",
             "resistances": "Healed by Water Ice Breathproof Vulnerable to Lightning"
         },
         {
