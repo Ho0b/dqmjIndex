@@ -21,6 +21,7 @@ main{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 header{
@@ -96,7 +97,7 @@ header{
 }
 
 #searchBox::before{
-  position: fixed;
+  position: relative;
   content: "";
   background-color: white;
   border: 0 solid transparent;
@@ -104,6 +105,24 @@ header{
   aspect-ratio: 1/1;
   border-radius: 50% 0 0 50%;
 }
+
+
+#monsterDetailContainer{
+  height: 768px;
+}
+
+/* 
+
+ C L A S S E S
+
+*/
+
+.monsterSprite{
+  width: 100vw;
+  max-width: 256px;
+  aspect-ratio: 1/1;
+}
+
 
 
 

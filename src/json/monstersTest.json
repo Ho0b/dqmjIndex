@@ -1,0 +1,15 @@
+{
+    "monsters":[
+        {
+            "id": "1",
+            "spriteUrl": "https://static.wikia.nocookie.net/dqmj/images/3/3e/Slime_icon.png",
+            "name": "Slime",
+            "family": "Slime",
+            "rank": "F",
+            "skillset": "Slimer",
+            "trait1": "Critical Massacre",
+            "trait2": "none",
+            "resistances": ""
+        }
+    ]
+}

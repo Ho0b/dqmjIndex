@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import slime from './assets/slime.svg'
 import './App.css'
-
+import monsterJson from './json/monsters.json'
 
 /*
 
@@ -26,6 +26,30 @@ function SearchBar(){
   )
 }
 
+function MonsterDetail(){
+
+  const result = monsterJson.monsters.map((mon, index) => (
+
+    <article key={index} id='monsterDetailContainer' >
+      <img className='monsterSprite' src={mon.spriteUrl} alt='monster sprite'></img>
+      <aside id='detailGrid'>
+        <div><p>Name: {mon.name}</p> <p>ID: {mon.id}</p></div>
+        <div><p>Rank: {mon.rank}</p> <p>Family: {mon.family}</p> <p>Skillset: {mon.skillset}</p></div>
+        <div><p>Trait 1: {mon.trait1}</p> <p>Trait 2: {mon.trait2}</p> <p>Resistances: {mon.resistances}</p></div>
+      </aside>
+    </article>
+    
+  ))
+
+  return (
+
+    <section>
+      {result}
+    </section>
+    
+  )
+}
+
 /*
 
   extra functionalities
@@ -41,6 +65,8 @@ function handleSearch(){
 }
 
 
+
+
 function App() {
 
   return (
@@ -49,7 +75,7 @@ function App() {
 
       <SearchBar/>
 
-      <section></section>
+      <MonsterDetail/>
     </main>
   )
 }
