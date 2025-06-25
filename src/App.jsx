@@ -3,8 +3,6 @@ import slime from './assets/slime.svg'
 import './App.css'
 import monsterJson from './json/monsters.json'
 
-let mList = document.getElementsByClassName("monsterDetailContainer")
-
 /*
 
   COMPONENTS
@@ -20,46 +18,68 @@ function HeaderCom(){
 }
 
 function SearchBar(){
+  let [query, setQuery] = useState("")
+  let inputRef = useRef()
+  let val = ""
+
+  const filtered = monsterJson.monsters.filter(mon => {
+    return mon.name.toLowerCase().includes(query.toLowerCase())
+  })
+
+  const filteredItems = filtered.map(mon=>(<p key={mon.id}>{mon.name}</p>))
+
+  function handleSearch(e){
+    e.preventDefault()
+    val = inputRef.current.value
+    if (val === "") return
+
+    inputRef.current.value = ""
+
+  }
+
   return(
-    <form id='searchBox'>
-      <input type="search" id='searchBar' placeholder='Look up a monster by Name or ID'/>
-      <button autoFocus type='button' onClick={handleSearch}></button>
+
+    <div>
+    <form id='searchBox' onSubmit={handleSearch}>
+      <input value={query} onChange={e=>setQuery(e.target.value)} ref={inputRef} type="search" id='searchBar' placeholder='search by Name or ID'/>
+      <button autoFocus type='submit'></button>
     </form>
+
+    {query === "" ? <></> : <section id='searchResults'>{filteredItems}</section>}
+    
+    </div>
   )
 }
 
-function MonsterDetail(){
-  let [slideIndex, setSlideIndex] = useState(0)
-  for(let i = slideIndex; i < mList.length; i++){
-    mList[i].style.display = "none"
-  }
+function MonsterDetail({monsterList}){
+  let [currentMonster, setCurrentMonster] = useState(0)
 
-  function mListNext(){
-    if (slideIndex > mList.length){
-      slideIndex = 0
-    } else {
-      setSlideIndex(slideIndex + 1)
+  function handlePrev(){
+    setCurrentMonster(i => i - 1)
+    console.log(currentMonster)
+    if (currentMonster <= 0){
+      setCurrentMonster(monsterList.length-1)
     }
-    console.log(slideIndex)
   }
-  function mListPrev(){
-    
-    if (slideIndex < 0){
-      slideIndex = mList.length
-    } else {
-      setSlideIndex(slideIndex - 1)
+  function handleNext(){
+    setCurrentMonster(i => i + 1)
+    console.log(currentMonster)
+    if (currentMonster >= monsterList.length-1){
+      setCurrentMonster(0)
     }
-    console.log(slideIndex)
   }
 
   const result = monsterJson.monsters.map((mon, index) => (
-
-    <article key={index} className='monsterDetailContainer' >
-      <img className='monsterSprite' src={mon.spriteUrl} alt='monster sprite'></img>
+    <article key={index} className='monsterDetailContainer' id={index == currentMonster ? "activeCard" : ""}>
+      <div className='detailsWrapper'>
+        
       <aside className='detailGrid'>
         <div>
           <span><strong>{mon.name}</strong></span> 
           <span>ID # <strong>{mon.id}</strong></span>
+        </div>
+        <div>
+          <img className='monsterSprite' src={mon.spriteUrl} alt='monster sprite'></img>
         </div>
         <div>
           <span>Rank: <strong>{mon.rank}</strong></span> 
@@ -73,28 +93,28 @@ function MonsterDetail(){
           <span>Resistances: <strong>{mon.resistances}</strong></span>
         </div>
       </aside>
+      </div>
     </article>
   ))
-
   return (
-
-    <section id='monsterCollection'>
+    <div>
+      <section id='monsterCollection'>
       {result}
+      </section>
 
       <div id='arrowContainer'>
-        <button className='ArrowCircle' type='button' onClick={mListPrev}>
-          <div id='leftArrow'></div>
-        </button>
-        <button className='ArrowCircle' type='button' onClick={mListNext}>
-          <div id='rightArrow'></div>
-        </button>
+      <button className='ArrowCircle' type='button' onClick={handlePrev}>
+        <div id='leftArrow'></div>
+      </button>
+      <button className='ArrowCircle' type='button' onClick={handleNext}>
+        <div id='rightArrow'></div>
+      </button>
       </div>
-    </section>
-
-    
+    </div>
     
   )
 }
+
 
 /*
 
@@ -102,16 +122,11 @@ function MonsterDetail(){
 
 */
 
-function handleSearch(){
 
-  let searchBar = document.getElementById("searchBar")
-  searchBar.value = ""
-
-  return false
-}
 
 
 function App() {
+  let mList = document.getElementsByClassName("monsterDetailContainer")
 
   return (
     <main>
@@ -121,8 +136,7 @@ function App() {
         <SearchBar/>
       </div>
         
-      <MonsterDetail/>
-
+      <MonsterDetail monsterList={mList}/>
     </main>
   )
 }

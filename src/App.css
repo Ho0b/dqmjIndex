@@ -46,6 +46,21 @@ header{
   }
 }
 
+#searchResults{
+  max-width: 512px;
+  background-color: white;
+  background-clip: border-box;
+
+  max-height: calc(51px*3);
+  overflow-y: scroll;
+
+  padding-left: var(--headerHeight);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+
+  scrollbar-width: none;
+}
+
 #searchBox{
   height: var(--headerHeight);
   width: 90vw;
@@ -68,7 +83,6 @@ header{
 
   & input{
     height: inherit;
-    padding-left: 24px;
     background-color: transparent;
     width: 100%;
     border: 0 solid transparent;
@@ -111,19 +125,19 @@ header{
 
 #monsterCollection{
   display: block;
-  width: 90%;
+  aspect-ratio: 9/16;
   height: 512px;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 #topBar{
   position: fixed;
   top: 0;
+  z-index: 1000;
 }
 
 #arrowContainer{
-  position: fixed;
-  bottom: 24px;
   width: calc(128px + 24px);
   display: flex;
   justify-content: space-between;
@@ -136,19 +150,26 @@ header{
     aspect-ratio: 1/1;
     border: 0 solid transparent;
     border-radius: 50%;
-    transition: background-color .05s;
+    transition: background-color .05s, transform .5s;
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: scale(1);
+
+    &:active{
+      transform: scale(.8);
+    }
 
     &:hover{
       background-color: var(--slimeBlue);
 
       & #leftArrow{
         border-right: 24px solid white;
+        transform: scale(1.2);
       }
       & #rightArrow{
         border-left: 24px solid white;
+        transform: scale(1.2);
       }
     }
 
@@ -156,40 +177,63 @@ header{
       height: 0px;
       width: 0px;
       border-radius: .25rem;
+      transition: transform .5s;
+
     }
 
     & #leftArrow{
       border-top: 12px solid transparent;
-      border-right: 24px solid black;
+      border-right: 24px solid var(--slimeBlue);
       border-bottom: 12px solid transparent;
     }
     & #rightArrow{
       border-top: 12px solid transparent;
-      border-left: 24px solid black;
+      border-left: 24px solid var(--slimeBlue);
       border-bottom: 12px solid transparent;
     }
 
   }
 }
 
+#activeCard{
+  display: block;
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition-property: transform , opacity;
+  transition-duration: .75s;
+  transition-timing-function: ease-in-out;
 
+  @starting-style{
+    opacity: 0;
+    transform: scale(0) translateY(-256px);
+  }
+}
+
+/* 
+
+ C L A S S E S
+
+*/
+
+.detailsWrapper{
+  padding: 1rem;
+}
 
 .monsterDetailContainer{
-  height: 512px;
+  display: none;
+  height: inherit;
+  background-color: var(--slimeBlue);
+
+  border: 0 solid transparent;
+  border-radius: 2rem;
 }
 
 .detailGrid{
-  background-color: var(--slimeBlue);
-
   min-height: 128px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
-  border: 0 solid transparent;
-  border-radius: 2rem;
-  padding: 32px;
-
+  height: calc(512px - 32px);
 
   & div{
     display: flex;
@@ -206,19 +250,13 @@ header{
 
 }
 
-/* 
-
- C L A S S E S
-
-*/
-
 .monsterSprite{
-  width: 100vw;
-  max-width: 256px;
-  aspect-ratio: 1/1;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   display: block;
+
+  /* background-color: var(--milk); */
 }
 
 .centerFlex{
@@ -242,26 +280,10 @@ header{
   };
 }
 @media only screen and (min-width: 960px){
-  #monsterCollection{
-    width: 100%;
-  }
-
   .monsterDetailContainer{
-    display: flex;
-    flex-direction: row;
-    max-width: 960px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .monsterSprite{
-    margin: 0;
-    max-width: 512px;
-    position: relative;
-  }
-
-  .detailGrid{
-    width: 512px;
-  }
 }
 
