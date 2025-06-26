@@ -41,7 +41,7 @@ function SearchBar(){
 
     <div>
     <form id='searchBox' onSubmit={handleSearch}>
-      <input value={query} onChange={e=>setQuery(e.target.value)} ref={inputRef} type="search" id='searchBar' placeholder='search by Name or ID'/>
+      <input autoComplete='off' value={query} onChange={e=>setQuery(e.target.value)} ref={inputRef} type="search" id='searchBar' placeholder='search by Name or ID'/>
       <button autoFocus type='submit'></button>
     </form>
 
@@ -75,8 +75,9 @@ function MonsterDetail({monsterList}){
         
       <aside className='detailGrid'>
         <div>
-          <span><strong>{mon.name}</strong></span> 
-          <span>ID # <strong>{mon.id}</strong></span>
+          <span><strong>{mon.name}</strong></span>
+          <strong className='monsterNumber'>{mon.id}</strong>
+          <span id='floatingPound'>#</span>
         </div>
         <div>
           <img className='monsterSprite' src={mon.spriteUrl} alt='monster sprite'></img>
@@ -97,7 +98,7 @@ function MonsterDetail({monsterList}){
     </article>
   ))
   return (
-    <div>
+    <div id='mainContent'>
       <section id='monsterCollection'>
       {result}
       </section>
