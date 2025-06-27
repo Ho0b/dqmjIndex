@@ -4,7 +4,7 @@
 }
 
 :root{
-  --milk: #e1e4c1;
+  --obsidian: #080808;
   --slimeBlue: #1c75bc;
 
   --headerHeight: 48px;
@@ -15,14 +15,14 @@
 
 body{
   display: block;
-  background-color: var(--milk);
+  background-color: var(--obsidian);
   margin: 0;
 }
 
 main{
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
 }
@@ -59,6 +59,14 @@ header{
   border-bottom-right-radius: 2rem;
 
   scrollbar-width: none;
+
+  opacity: 1;
+  transition: opacity .5s;
+
+  @starting-style{
+    opacity: 0;
+
+  }
 }
 
 #searchBox{
@@ -73,12 +81,12 @@ header{
   background-clip: border-box;
   border: 0px solid transparent;
   border-radius: 2rem;
-  transition: border .1s ease-in-out;
+  transition: border .1s ease-in-out, border-radius .1s ease-in-out;
   padding: 0;
 
   &:focus-within{
     border: 2px solid var(--slimeBlue);
-    border-radius: 2rem;
+    border-radius: 2rem 2rem 0 0 ;
   }
 
   & input{
@@ -126,25 +134,28 @@ header{
 #monsterCollection{
   display: block;
   aspect-ratio: 9/16;
-  height: 544px;
-  /* width: 90vw; */
+  /* height: 75vh; */
+  width: 75vw;
+  max-width: 512px;
+  max-height: 512px;
   overflow-y: hidden;
   overflow-x: hidden;
   filter: drop-shadow( 0 8px 4px black);
 }
 
 #topBar{
-  position: fixed;
+  position: absolute;
   top: 0;
-  z-index: 1000;
+  z-index: 10;
 }
 
 #mainContent{
-  align-self: end;
+  align-self: center;
+  margin-top: 256px;
 }
 
 #arrowContainer{
-  width: calc(128px + 24px);
+  width: calc(16vh + 24px);
   display: flex;
   justify-content: space-between;
   margin-left: auto;
@@ -154,7 +165,9 @@ header{
 
   & .ArrowCircle{
     background-color: white;
-    height: 64px;
+    min-height: 48px;
+    height: 8vh;
+    max-height: 64px;
     aspect-ratio: 1/1;
     border: 0 solid transparent;
     border-radius: 50%;
@@ -225,6 +238,17 @@ header{
 
 */
 
+.resultButton{
+  display: block;
+  border: none;
+  background-color: white;
+
+  &:hover{
+    background-color: gray;
+  }
+}
+
+
 .monsterId{
   display: block;
   position: fixed;
@@ -262,9 +286,8 @@ header{
 
 .monsterDetailContainer{
   display: none;
-  height: inherit;
   background-color: var(--slimeBlue);
-
+  height: 100%;
   border: 0 solid transparent;
   border-radius: 2rem;
 }
@@ -274,7 +297,6 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: calc(512px - 32px);
 
   & div{
     /* display: flex;
@@ -286,6 +308,7 @@ header{
         text-wrap: wrap;
         color: white;
         margin: 0;
+        filter: drop-shadow( 0 0 .65rem black);
       }
   }
 
@@ -297,7 +320,7 @@ header{
   margin: auto;
   display: block;
   filter: drop-shadow( -.25rem .25rem .25rem #165b94);
-  /* background-color: var(--milk); */
+  /* background-color: var(--obsidian); */
 }
 
 .centerFlex{

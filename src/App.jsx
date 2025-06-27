@@ -17,7 +17,7 @@ function HeaderCom(){
   )
 }
 
-function SearchBar(){
+function SearchBar({currentMonster, setCurrentMonster}){
   let [query, setQuery] = useState("")
   let inputRef = useRef()
   let val = ""
@@ -26,7 +26,7 @@ function SearchBar(){
     return mon.name.toLowerCase().includes(query.toLowerCase())
   })
 
-  const filteredItems = filtered.map(mon=>(<p key={mon.id}>{mon.name}</p>))
+  const filteredItems = filtered.map(mon=>(<button className='resultButton' type='buton' key={mon.id} onClick={()=>{setCurrentMonster(Number(mon.id)-1)}}><p key={mon.id}>{mon.name}</p></button>))
 
   function handleSearch(e){
     e.preventDefault()
@@ -42,7 +42,7 @@ function SearchBar(){
     <div>
     <form id='searchBox' onSubmit={handleSearch}>
       <input autoComplete='off' value={query} onChange={e=>setQuery(e.target.value)} ref={inputRef} type="search" id='searchBar' placeholder='search by Name or ID'/>
-      <button autoFocus type='submit'></button>
+      <button type='submit'></button>
     </form>
 
     {query === "" ? <></> : <section id='searchResults'>{filteredItems}</section>}
@@ -51,9 +51,7 @@ function SearchBar(){
   )
 }
 
-function MonsterDetail({monsterList}){
-  let [currentMonster, setCurrentMonster] = useState(0)
-
+function MonsterDetail({monsterList, currentMonster, setCurrentMonster}){
   function handlePrev(){
     setCurrentMonster(i => i - 1)
     console.log(currentMonster)
@@ -132,6 +130,7 @@ function MonsterDetail({monsterList}){
 
 
 function App() {
+  let [currentMonster, setCurrentMonster] = useState(0)
   let mList = document.getElementsByClassName("monsterDetailContainer")
 
   return (
@@ -139,10 +138,10 @@ function App() {
       <div id='topBar'>
         <HeaderCom/>
 
-        <SearchBar/>
+        <SearchBar currentMonster={currentMonster} setCurrentMonster={setCurrentMonster}/>
       </div>
         
-      <MonsterDetail monsterList={mList}/>
+      <MonsterDetail monsterList={mList} currentMonster={currentMonster} setCurrentMonster={setCurrentMonster}/>
     </main>
   )
 }
