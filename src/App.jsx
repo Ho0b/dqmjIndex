@@ -75,23 +75,28 @@ function MonsterDetail({monsterList}){
         
       <aside className='detailGrid'>
         <div>
-          <span><strong>{mon.name}</strong></span>
-          <strong className='monsterNumber'>{mon.id}</strong>
-          <span id='floatingPound'>#</span>
+          <div><p>{mon.name}</p></div>
+          <div className='monsterId'><span id='poundSign'>#</span><span id='numberSign'>{mon.id}</span></div>
         </div>
         <div>
           <img className='monsterSprite' src={mon.spriteUrl} alt='monster sprite'></img>
         </div>
-        <div>
-          <span>Rank: <strong>{mon.rank}</strong></span> 
-          <span>Family: <strong>{mon.family}</strong></span> 
-          <span>Skillset: <strong>{mon.skillset}</strong></span>
+        <div className='statsRow'>
+          <div><span>Rank:</span><p>{mon.rank}</p></div>
+          <div><span>Family:</span><p>{mon.family}</p></div>
+          <div><span>Skillset:</span><p>{mon.skillset}</p></div>
         </div>
-        <div>
-          <span>Traits: <strong>{mon.trait1}</strong> <strong>{(mon.trait2 != "") ? `& ${mon.trait2}` : ""}</strong></span>
+        <div className='statsRow'>
+          <div>
+            <span>Traits:</span>
+            <p>{mon.trait1}</p> <p>{(mon.trait2 != "") ? `& ${mon.trait2}` : ""}</p>
+          </div>
         </div>
-        <div>
-          <span>Resistances: <strong>{mon.resistances}</strong></span>
+        <div className='statsRow'>
+          <div>
+            <span>Resistances:</span>
+            <p>{mon.resistances}</p>
+          </div>
         </div>
       </aside>
       </div>

@@ -130,6 +130,7 @@ header{
   /* width: 90vw; */
   overflow-y: hidden;
   overflow-x: hidden;
+  filter: drop-shadow( 0 8px 4px black);
 }
 
 #topBar{
@@ -206,8 +207,8 @@ header{
   display: block;
   opacity: 1;
   transform: scale(1) translateY(0);
-  transition-property: transform , opacity;
-  transition-duration: .75s;
+  transition-property: transform;
+  transition-duration: .25s;
   transition-timing-function: ease-in-out;
 
   @starting-style{
@@ -216,13 +217,7 @@ header{
   }
 }
 
-#floatingPound{
-  font-size: 8rem;
-  color: white;
-  position: fixed;
-  right: 0;
-  top: -24px;
-}
+
 
 /* 
 
@@ -230,14 +225,35 @@ header{
 
 */
 
-.monsterNumber{
-  color: white;
-  filter: drop-shadow(0 0 .25rem black);
-  font-size: 4rem;
+.monsterId{
+  display: block;
   position: fixed;
+  top: 0;
   right: 0;
-  top: 12px;
-  z-index: 5;
+  color: white;
+
+ & span#poundSign{
+    position: fixed;
+    top: -24px;
+    right: 0;
+    font-size: 8rem;
+  }
+
+  & span#numberSign{
+    display: block;
+    color: white;
+    font-size: 4rem;
+    width: 80px;
+    text-align: center;
+    margin-top: 12px;
+    filter: drop-shadow( 0 0 .65rem black);
+  }
+}
+
+.statsRow{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .detailsWrapper{
@@ -261,28 +277,26 @@ header{
   height: calc(512px - 32px);
 
   & div{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; */
 
-    & span{
-      white-space: pre-wrap;
-      & strong{
+    & div p{
         font-size: 1.2rem;
         text-wrap: wrap;
         color: white;
+        margin: 0;
       }
-    }
   }
 
 }
 
 .monsterSprite{
   width: auto;
-  margin-left: auto;
-  margin-right: auto;
+  aspect-ratio: 1/1;
+  margin: auto;
   display: block;
-  filter: drop-shadow( -.5rem .5rem .25rem #165b94);
+  filter: drop-shadow( -.25rem .25rem .25rem #165b94);
   /* background-color: var(--milk); */
 }
 
