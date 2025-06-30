@@ -26,7 +26,7 @@ function SearchBar({currentMonster, setCurrentMonster}){
     return mon.name.toLowerCase().includes(query.toLowerCase())
   })
 
-  const filteredItems = filtered.map(mon=>(<button className='resultButton' type='buton' key={mon.id} onClick={()=>{setCurrentMonster(Number(mon.id)-1)}}><p key={mon.id}>{mon.name}</p></button>))
+  const filteredItems = filtered.map(mon=>(<button className='resultButton' type='buton' key={mon.id} onClick={()=>{setCurrentMonster(Number(mon.id)-1); setQuery("")}}><p key={mon.id}>{mon.name}</p></button>))
 
   function handleSearch(e){
     e.preventDefault()
@@ -54,14 +54,12 @@ function SearchBar({currentMonster, setCurrentMonster}){
 function MonsterDetail({monsterList, currentMonster, setCurrentMonster}){
   function handlePrev(){
     setCurrentMonster(i => i - 1)
-    console.log(currentMonster)
     if (currentMonster <= 0){
       setCurrentMonster(monsterList.length-1)
     }
   }
   function handleNext(){
     setCurrentMonster(i => i + 1)
-    console.log(currentMonster)
     if (currentMonster >= monsterList.length-1){
       setCurrentMonster(0)
     }
@@ -73,7 +71,7 @@ function MonsterDetail({monsterList, currentMonster, setCurrentMonster}){
         
       <aside className='detailGrid'>
         <div>
-          <div><p>{mon.name}</p></div>
+          <div><p id='monsterName'>{mon.name}</p></div>
           <div className='monsterId'><span id='poundSign'>#</span><span id='numberSign'>{mon.id}</span></div>
         </div>
         <div>
@@ -87,13 +85,13 @@ function MonsterDetail({monsterList, currentMonster, setCurrentMonster}){
         <div className='statsRow'>
           <div>
             <span>Traits:</span>
-            <p>{mon.trait1}</p> <p>{(mon.trait2 != "") ? `& ${mon.trait2}` : ""}</p>
+            <p>{mon.trait1 === "" ? "None" : mon.trait1} {(mon.trait2 != "") ? `& ${mon.trait2}` : ""}</p>
           </div>
         </div>
         <div className='statsRow'>
           <div>
             <span>Resistances:</span>
-            <p>{mon.resistances}</p>
+            <p>{mon.resistances === "" ? "None" : mon.resistances}</p>
           </div>
         </div>
       </aside>

@@ -6,6 +6,7 @@
 :root{
   --obsidian: #080808;
   --slimeBlue: #1c75bc;
+  --mustard: #face4b;
 
   --headerHeight: 48px;
 
@@ -25,6 +26,7 @@ main{
   flex-direction: column;
   align-items: center;
   height: 100vh;
+
 }
 
 header{
@@ -54,7 +56,6 @@ header{
   max-height: calc(51px*3);
   overflow-y: scroll;
 
-  padding-left: var(--headerHeight);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
 
@@ -96,6 +97,7 @@ header{
     border: 0 solid transparent;
     outline: none;
     z-index: 1;
+    font-size: 1rem;
   }
 
   & button{
@@ -136,11 +138,11 @@ header{
   aspect-ratio: 9/16;
   /* height: 75vh; */
   width: 75vw;
-  max-width: 512px;
-  max-height: 512px;
+  max-width: 400px;
+  max-height: 712px;
   overflow-y: hidden;
   overflow-x: hidden;
-  filter: drop-shadow( 0 8px 4px black);
+  filter: drop-shadow( 0 6px .05rem var(--mustard));
 }
 
 #topBar{
@@ -230,7 +232,13 @@ header{
   }
 }
 
-
+#monsterName{
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  color: var(--mustard);
+  filter: drop-shadow(0 0 .2rem black) drop-shadow(0 0 .1rem black);
+}
 
 /* 
 
@@ -242,9 +250,10 @@ header{
   display: block;
   border: none;
   background-color: white;
+  width: 100%;
 
   &:hover{
-    background-color: gray;
+    background-color: var(--mustard);
   }
 }
 
@@ -255,6 +264,7 @@ header{
   top: 0;
   right: 0;
   color: white;
+  z-index: 6;
 
  & span#poundSign{
     position: fixed;
@@ -265,12 +275,13 @@ header{
 
   & span#numberSign{
     display: block;
-    color: white;
+    color: var(--mustard);
     font-size: 4rem;
-    width: 80px;
+    width: fit-content;
+    min-width: 80px;
     text-align: center;
     margin-top: 12px;
-    filter: drop-shadow( 0 0 .65rem black);
+    filter: drop-shadow( 0 0 .5rem black) drop-shadow( 0 0 .1rem black);
   }
 }
 
@@ -278,15 +289,30 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: start;
+  min-height: 4rem;
 }
 
 .detailsWrapper{
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
+  background-color: var(--slimeBlue);
+  background-clip: content-box;
+
+	/* background-size: 64px 112px;
+	background-position: 0 0, 0 0, 32px 56px, 32px 56px, 0 0, 32px 56px;
+	background-color: var(--slimeBlue);
+  background-clip: content-box; */
+
+  height: calc(100% - 1rem);
+
+  border: 0px solid transparent;
+  border-radius: 2rem;
 }
 
 .monsterDetailContainer{
   display: none;
-  background-color: var(--slimeBlue);
+  /* background-color: var(--slimeBlue); */
+  background: linear-gradient(to top, var(--slimeBlue) 75%, var(--mustard));
+
   height: 100%;
   border: 0 solid transparent;
   border-radius: 2rem;
@@ -303,13 +329,16 @@ header{
     flex-direction: row;
     justify-content: space-between; */
 
+    & div span:not(#poundSign, #numberSign){
+      color: var(--obsidian);
+    }
+
     & div p{
-        font-size: 1.2rem;
-        text-wrap: wrap;
+        font-size: 1rem;
         color: white;
         margin: 0;
         filter: drop-shadow( 0 0 .65rem black);
-      }
+    }
   }
 
 }
@@ -339,9 +368,6 @@ header{
 }
 
 @media only screen and (min-width: 480px){
-  *{
-    font-size: 1rem
-  };
 }
 @media only screen and (min-width: 960px){
   .monsterDetailContainer{
@@ -349,5 +375,12 @@ header{
     margin-right: auto;
   }
 
+}
+
+@media only screen and (min-height: 668px) {
+  #monsterName{
+    font-size: 1.5rem;
+  }
+  
 }
 
