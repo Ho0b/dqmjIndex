@@ -22,18 +22,45 @@ function SearchBar({currentMonster, setCurrentMonster}){
   let inputRef = useRef()
   let val = ""
 
-  const filtered = monsterJson.monsters.filter(mon => {
-    return mon.name.toLowerCase().includes(query.toLowerCase())
-  })
+  const filtered = monsterJson.monsters.filter(mon => 
+    {
+      if (Number(query)){
+        return mon.id.toLowerCase().includes(query.toLowerCase())
+      } else {
+        return mon.name.toLowerCase().includes(query.toLowerCase())
+      }
+    }
+  )
 
-  const filteredItems = filtered.map(mon=>(<button className='resultButton' type='buton' key={mon.id} onClick={()=>{setCurrentMonster(Number(mon.id)-1); setQuery("")}}><p key={mon.id}>{mon.name}</p></button>))
+  const filteredItems = filtered.map(mon =>
+    (
+    <button 
+      className='resultButton' 
+      type='buton' 
+      key={mon.id} 
+      onClick={
+        ()=>{
+          setCurrentMonster(Number(mon.id)-1); setQuery("")
+        }
+        }>
+      <img src={mon.spriteUrl} height={40} width={40} alt={mon.name + " sprite icon"}/>
+      <p key={mon.id}>{mon.name}</p>
+    </button>
+    )
+  )
 
   function handleSearch(e){
     e.preventDefault()
     val = inputRef.current.value
-    if (val === "") return
 
+    let parsedInput = Number(query)
+    if (parsedInput === 0 || parsedInput <= 0 || parsedInput > 210 || isNaN(parsedInput)) return
+    console.log(parsedInput)
+    setCurrentMonster(parsedInput-1)
+
+    if (val === "") return
     inputRef.current.value = ""
+    setQuery("")
 
   }
 
@@ -42,7 +69,6 @@ function SearchBar({currentMonster, setCurrentMonster}){
     <div>
     <form id='searchBox' onSubmit={handleSearch}>
       <input autoComplete='off' value={query} onChange={e=>setQuery(e.target.value)} ref={inputRef} type="search" id='searchBar' placeholder='search by Name or ID'/>
-      <button type='submit'></button>
     </form>
 
     {query === "" ? <></> : <section id='searchResults'>{filteredItems}</section>}
@@ -78,19 +104,19 @@ function MonsterDetail({monsterList, currentMonster, setCurrentMonster}){
           <img className='monsterSprite' src={mon.spriteUrl} alt='monster sprite'></img>
         </div>
         <div className='statsRow'>
-          <div><span>Rank:</span><p>{mon.rank}</p></div>
-          <div><span>Family:</span><p>{mon.family}</p></div>
-          <div><span>Skillset:</span><p>{mon.skillset}</p></div>
+          <div><span>RANK</span><p>{mon.rank}</p></div>
+          <div><span>FAMILY</span><p>{mon.family}</p></div>
+          <div><span>SKILLSET</span><p>{mon.skillset}</p></div>
         </div>
         <div className='statsRow'>
           <div>
-            <span>Traits:</span>
+            <span>TRAITS</span>
             <p>{mon.trait1 === "" ? "None" : mon.trait1} {(mon.trait2 != "") ? `& ${mon.trait2}` : ""}</p>
           </div>
         </div>
         <div className='statsRow'>
           <div>
-            <span>Resistances:</span>
+            <span>RESISTANCES</span>
             <p>{mon.resistances === "" ? "None" : mon.resistances}</p>
           </div>
         </div>

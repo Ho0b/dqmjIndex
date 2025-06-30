@@ -16,7 +16,9 @@
 
 body{
   display: block;
-  background-color: var(--obsidian);
+  background-image: linear-gradient(45deg, black, var(--obsidian) 75%);
+  background-size: 32px 32px;
+  background-repeat: repeat;
   margin: 0;
 }
 
@@ -66,7 +68,6 @@ header{
 
   @starting-style{
     opacity: 0;
-
   }
 }
 
@@ -91,6 +92,7 @@ header{
   }
 
   & input{
+    padding-left: var(--headerHeight);
     height: inherit;
     background-color: transparent;
     width: 100%;
@@ -99,38 +101,6 @@ header{
     z-index: 1;
     font-size: 1rem;
   }
-
-  & button{
-    background-image: url(./assets/search.svg);
-    background-size: calc(var(--headerHeight) - 8px);
-    background-repeat:no-repeat;
-    background-position:center;
-    margin: 0;
-    height: inherit;
-    /* align-self: flex-end; */
-    height: var(--headerHeight);
-    aspect-ratio: 1/1;
-    padding: 0;
-    border-radius: 0 50% 50% 0;
-    border: 0 solid transparent;
-    background-color: white;
-    transition: filter;
-    transition-duration: .1s;
-
-    &:hover{
-      filter: invert();
-    }
-  }
-}
-
-#searchBox::before{
-  position: relative;
-  content: "";
-  background-color: white;
-  border: 0 solid transparent;
-  height: var(--headerHeight);
-  aspect-ratio: 1/1;
-  border-radius: 50% 0 0 50%;
 }
 
 #monsterCollection{
@@ -142,7 +112,7 @@ header{
   max-height: 712px;
   overflow-y: hidden;
   overflow-x: hidden;
-  filter: drop-shadow( 0 6px .05rem var(--mustard));
+  filter: drop-shadow( 0 8px .01rem var(--mustard));
 }
 
 #topBar{
@@ -234,7 +204,6 @@ header{
 
 #monsterName{
   font-size: 1.2rem;
-  padding-top: 1rem;
   padding-left: 1rem;
   color: var(--mustard);
   filter: drop-shadow(0 0 .2rem black) drop-shadow(0 0 .1rem black);
@@ -293,16 +262,11 @@ header{
 }
 
 .detailsWrapper{
-  padding: 1rem 1rem 0 1rem;
-  background-color: var(--slimeBlue);
+  padding: 1rem 1rem 1rem 1rem;
+  background-image: linear-gradient(to bottom, var(--slimeBlue) 50%, var(--mustard) 50%);
   background-clip: content-box;
 
-	/* background-size: 64px 112px;
-	background-position: 0 0, 0 0, 32px 56px, 32px 56px, 0 0, 32px 56px;
-	background-color: var(--slimeBlue);
-  background-clip: content-box; */
-
-  height: calc(100% - 1rem);
+  height: calc(100% - 2rem);
 
   border: 0px solid transparent;
   border-radius: 2rem;
@@ -311,7 +275,7 @@ header{
 .monsterDetailContainer{
   display: none;
   /* background-color: var(--slimeBlue); */
-  background: linear-gradient(to top, var(--slimeBlue) 75%, var(--mustard));
+  background: linear-gradient(to top, #fff 10%, transparent 5%) ,linear-gradient(to top, var(--slimeBlue) 75%, var(--mustard));
 
   height: 100%;
   border: 0 solid transparent;
@@ -319,10 +283,18 @@ header{
 }
 
 .detailGrid{
+
+  --borderDifference: .2rem;
+
   min-height: 128px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  border: var(--borderDifference) solid var(--mustard);
+  border-radius: 1rem;
+  height: calc(100% - var(--borderDifference));
+
 
   & div{
     /* display: flex;
@@ -334,10 +306,11 @@ header{
     }
 
     & div p{
+        padding-left: 1rem;
         font-size: 1rem;
         color: white;
         margin: 0;
-        filter: drop-shadow( 0 0 .65rem black);
+        filter: drop-shadow(0 0 .2rem black) drop-shadow(0 0 .1rem black);
     }
   }
 
@@ -367,8 +340,16 @@ header{
   margin-right: auto;
 }
 
-@media only screen and (min-width: 480px){
+@media only screen and (max-width: 300px){
+  *{
+    font-size: .8rem;
+  }
+
+  .monsterSprite{
+    width: 80%;
+  }
 }
+
 @media only screen and (min-width: 960px){
   .monsterDetailContainer{
     margin-left: auto;
@@ -379,7 +360,7 @@ header{
 
 @media only screen and (min-height: 668px) {
   #monsterName{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   
 }
