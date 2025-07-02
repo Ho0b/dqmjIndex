@@ -11,13 +11,13 @@ import monsterJson from './json/monsters.json'
 function HeaderCom(){
   return (
     <header>
-      <img src={slime} alt="slime icon" />
-      <span>DQMJ INDEX</span>
+      <img id='titleImg' src={slime} alt="slime icon" />
+      <span>DRAGON QUEST INDEX</span>
     </header>
   )
 }
 
-function SearchBar({currentMonster, setCurrentMonster}){
+function SearchBar({currentMonster, setCurrentMonster, isCatalogActive, showCatalog, modal}){
   let [query, setQuery] = useState("")
   let inputRef = useRef()
   let val = ""
@@ -37,14 +37,15 @@ function SearchBar({currentMonster, setCurrentMonster}){
     <button 
       className='resultButton' 
       type='buton' 
-      key={mon.id} 
+      key={mon.id}
+      aria-label='result button'
       onClick={
         ()=>{
           setCurrentMonster(Number(mon.id)-1); setQuery("")
         }
         }>
-      <img src={mon.spriteUrl} height={40} width={40} alt={mon.name + " sprite icon"}/>
-      <p key={mon.id}>{mon.name}</p>
+      <img className="resultButtonImg" src={mon.spriteUrl} height={40} width={40} alt={mon.name + " sprite icon"}/>
+      <span className="resultButtonText" key={mon.id}>{mon.name}</span>
     </button>
     )
   )
@@ -63,13 +64,17 @@ function SearchBar({currentMonster, setCurrentMonster}){
     setQuery("")
 
   }
-
+  
   return(
 
     <div>
-    <form id='searchBox' onSubmit={handleSearch}>
-      <input autoComplete='off' value={query} onChange={e=>setQuery(e.target.value)} ref={inputRef} type="search" id='searchBar' placeholder='search by Name or ID'/>
-    </form>
+    <button aria-label='catalog button' id="bookMenu" onClick={()=>{showCatalog(true); modal.showModal()}}></button>
+
+    <div id='searchBoxWrapper' aria-label='search box'>
+      <form aria-label='form box' id='searchBox' onSubmit={handleSearch}>
+        <input aria-label='form search box' autoComplete='off' value={query} onChange={e=>setQuery(e.target.value)} ref={inputRef} type="search" id='searchBar' placeholder='search by Name or ID'/>
+      </form>
+    </div>
 
     {query === "" ? <></> : <section id='searchResults'>{filteredItems}</section>}
     
@@ -78,21 +83,37 @@ function SearchBar({currentMonster, setCurrentMonster}){
 }
 
 function MonsterDetail({monsterList, currentMonster, setCurrentMonster}){
+  let [direction, setDirection] = useState("")
+  
   function handlePrev(){
     setCurrentMonster(i => i - 1)
+    setDirection("l")
     if (currentMonster <= 0){
       setCurrentMonster(monsterList.length-1)
     }
   }
   function handleNext(){
     setCurrentMonster(i => i + 1)
+    setDirection("r")
     if (currentMonster >= monsterList.length-1){
       setCurrentMonster(0)
     }
   }
 
+  function directionSwitch(){
+    if (direction == "l") {
+      return "cardGoRight"
+    }
+    else if (direction == "r") {
+      return "cardGoLeft"
+    } else {
+      return "activeCard"
+    }
+    
+  }
+
   const result = monsterJson.monsters.map((mon, index) => (
-    <article key={index} className='monsterDetailContainer' id={index == currentMonster ? "activeCard" : ""}>
+    <article key={index} className="monsterDetailContainer" id={index == currentMonster ? directionSwitch() : ""}>
       <div className='detailsWrapper'>
         
       <aside className='detailGrid'>
@@ -125,16 +146,16 @@ function MonsterDetail({monsterList, currentMonster, setCurrentMonster}){
     </article>
   ))
   return (
-    <div id='mainContent'>
-      <section id='monsterCollection'>
+    <div id='mainContent' aria-label='main'>
+      <section id='monsterCollection' aria-label='card'>
       {result}
       </section>
 
-      <div id='arrowContainer'>
-      <button className='ArrowCircle' type='button' onClick={handlePrev}>
+      <div id='arrowContainer' aria-label='navigation buttons'>
+      <button aria-label='previous card' className='ArrowCircle' type='button' onClick={handlePrev}>
         <div id='leftArrow'></div>
       </button>
-      <button className='ArrowCircle' type='button' onClick={handleNext}>
+      <button aria-label='next card' className='ArrowCircle' type='button' onClick={handleNext}>
         <div id='rightArrow'></div>
       </button>
       </div>
@@ -143,6 +164,31 @@ function MonsterDetail({monsterList, currentMonster, setCurrentMonster}){
   )
 }
 
+
+function ShowFullList({modal, toggleModal}){
+
+  let fullList = monsterJson.monsters.map((mon, index)=>(
+    <figure key={index}>
+      <span>{mon.id}</span>
+      <img src={mon.spriteUrl} alt={mon.name + " sprite icon"}></img>
+      <figcaption>{mon.name}</figcaption>
+    </figure>
+  ))
+
+  return (
+    <dialog id='listWrapper' aria-label='catalog'>
+      <section>
+        <div>
+          <button aria-label='catalog close button' autoFocus type='button' id="xButton" onClick={()=>{modal.close(); toggleModal(false)}}></button>
+          <p>Monster Catalog</p>
+        </div>
+        <article id='fullList'>
+          {fullList}
+        </article>
+      </section>
+    </dialog>
+  )
+}
 
 /*
 
@@ -155,17 +201,31 @@ function MonsterDetail({monsterList, currentMonster, setCurrentMonster}){
 
 function App() {
   let [currentMonster, setCurrentMonster] = useState(0)
+  let [isFullListActive, setFullList] = useState(false)
   let mList = document.getElementsByClassName("monsterDetailContainer")
+  let catalogModal = document.getElementById("listWrapper")
 
   return (
     <main>
-      <div id='topBar'>
+      <div id='topBar' aria-label='header'>
         <HeaderCom/>
 
-        <SearchBar currentMonster={currentMonster} setCurrentMonster={setCurrentMonster}/>
+        <SearchBar 
+        currentMonster={currentMonster} 
+        setCurrentMonster={setCurrentMonster}
+        isCatalogActive={isFullListActive}
+        showCatalog={setFullList}
+        modal={catalogModal}
+        />
       </div>
-        
-      <MonsterDetail monsterList={mList} currentMonster={currentMonster} setCurrentMonster={setCurrentMonster}/>
+      
+      <ShowFullList modal={catalogModal} toggleModal={setFullList}/>
+
+      <MonsterDetail 
+      monsterList={mList} 
+      currentMonster={currentMonster} 
+      setCurrentMonster={setCurrentMonster}
+      />
     </main>
   )
 }
